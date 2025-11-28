@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>GameGou News | Football Game Updates &amp; Events</title>
+  <meta name="description" content="Follow news from GameGou, the studio behind Perfect Kick, Perfect Kick 2, Top Football Manager, and Soccer Strike. Read about updates, live events, and dev notes." />
+  <link rel="canonical" href="https://www.gamegou.com/news.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GameGou News" />
+  <meta property="og:description" content="Updates and dev notes across Perfect Kick, Perfect Kick 2, Top Football Manager, and Soccer Strike." />
+  <meta property="og:image" content="https://www.gamegou.com/assets/images/hero-perfect-kick-2.webp" />
+  <meta property="og:url" content="https://www.gamegou.com/news.html" />
+  <meta property="og:site_name" content="GameGou" />
   <meta charset="UTF-8" />
-  <title>News | Gamegou</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="theme-color" content="#03040b" />
+  <link rel="icon" type="image/webp" href="assets/icons/gamegou-logo.webp" />
+  <link rel="preload" as="image" href="assets/images/hero-perfect-kick-2.webp" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script defer src="scripts/layout.js"></script>
+  <script defer src="scripts/news.js"></script>
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">
-      <span class="logo-mark">G</span>
-      <span class="logo-text">Gamegou</span>
-    </a>
-    <nav class="main-nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="games.html" class="nav-link">Games</a>
-      <a href="partners.html" class="nav-link">Partners</a>
-      <a href="news.html" class="nav-link">News</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
-  </div>
-</header>
+  <div data-include="header"></div>
 
-<main>
-  <section class="section">
-    <div class="container narrow">
-      <h1>News & Updates</h1>
-      <p class="section-intro">Studio announcements, feature spotlights, live event recaps, and major game updates.</p>
-      <p class="section-intro subtle">This page is a starting point. You can freely edit the copy and add sections as needed.</p>
-    </div>
-  </section>
-</main>
+  <main class="section">
+    <div class="container">
+      <header class="section-header">
+        <p class="section-kicker">News</p>
+        <h1 class="section-title">News, updates, and dev notes.</h1>
+        <p class="section-subtitle">
+          Everything happening around GameGou&apos;s football games&mdash;from live events and balance updates to feature deep dives across our portfolio.
+        </p>
+      </header>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; 2025 Gamegou. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-of-service.html">Terms of Service</a>
-      <a href="licensing.html">Licensing</a>
+      <div class="news-layout">
+        <div class="news-grid">
+          <div>
+            <div id="news-list" class="news-cards"></div>
+          </div>
+          <aside class="news-sidebar">
+            <h2 class="section-title" style="font-size:1.12rem;">Follow our channels</h2>
+            <p class="section-subtitle" style="max-width:none; font-size:0.9rem;">
+              Follow us on your favourite platforms to catch trailers, patch breakdowns, and community tournaments as they happen.
+            </p>
+            <ul style="list-style:none; padding:0; margin:14px 0 0; font-size:0.9rem;">
+              <li><a href="#" rel="noopener noreferrer" target="_blank">Official YouTube Channel</a></li>
+              <li><a href="#" rel="noopener noreferrer" target="_blank">Discord Community</a></li>
+              <li><a href="#" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.renderGameGouNews) {
+        window.renderGameGouNews('#news-list');
+      }
+    });
+  </script>
 </body>
 </html>

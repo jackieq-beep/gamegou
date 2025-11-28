@@ -1,135 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>GameGou | Mobile Football Games Studio</title>
+  <meta name="description" content="GameGou is a mobile game studio behind Perfect Kick, Perfect Kick 2, Top Football Manager, and Soccer Strike. Fast, social football experiences for players worldwide." />
+  <meta name="keywords" content="GameGou, Perfect Kick, Perfect Kick 2, Top Football Manager, Soccer Strike, football game, soccer game, mobile football" />
+  <link rel="canonical" href="https://www.gamegou.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GameGou | Mobile Football Games Studio" />
+  <meta property="og:description" content="Discover GameGou's line-up of mobile football games including Perfect Kick, Perfect Kick 2, Top Football Manager, and Soccer Strike." />
+  <meta property="og:image" content="https://www.gamegou.com/assets/images/hero-perfect-kick-2.webp" />
+  <meta property="og:url" content="https://www.gamegou.com/" />
+  <meta property="og:site_name" content="GameGou" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta charset="UTF-8" />
-  <title>Gamegou Global Sports Games Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Gamegou is a global mobile sports studio creating deeply engaging football and sports games for players around the world." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="theme-color" content="#03040b" />
+  <link rel="icon" type="image/webp" href="assets/icons/gamegou-logo.webp" />
+  <link rel="preload" as="image" href="assets/images/hero-perfect-kick-2.webp" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <script defer src="scripts/layout.js"></script>
+  <script defer src="scripts/news.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GameGou",
+    "url": "https://www.gamegou.com/",
+    "logo": "https://www.gamegou.com/assets/icons/gamegou-logo.webp",
+    "sameAs": [],
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "VideoGame",
+          "name": "Perfect Kick",
+          "genre": ["Sports", "Football"],
+          "applicationCategory": "Game",
+          "operatingSystem": "Android, iOS"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "VideoGame",
+          "name": "Perfect Kick 2",
+          "genre": ["Sports", "Football"],
+          "applicationCategory": "Game",
+          "operatingSystem": "Android, iOS"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "VideoGame",
+          "name": "Top Football Manager",
+          "genre": ["Sports", "Football", "Management"],
+          "applicationCategory": "Game",
+          "operatingSystem": "Android, iOS"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "VideoGame",
+          "name": "Soccer Strike",
+          "genre": ["Sports", "Football"],
+          "applicationCategory": "Game",
+          "operatingSystem": "Android, iOS"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">
-      <span class="logo-mark">G</span>
-      <span class="logo-text">Gamegou</span>
-    </a>
-    <nav class="main-nav">
-      <a href="index.html" class="nav-link active">Home</a>
-      <a href="games.html" class="nav-link">Games</a>
-      <a href="partners.html" class="nav-link">Partners</a>
-      <a href="news.html" class="nav-link">News</a>
-      <a href="contact.html" class="nav-link">Contact</a>
-    </nav>
-  </div>
-</header>
+  <div data-include="header"></div>
 
-<main>
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <p class="eyebrow">Mobile Sports. Global Stage.</p>
-        <h1>World-class football games in the palm of your hand.</h1>
-        <p class="hero-body">
-          Gamegou is an award-winning studio crafting deeply engaging football and sports titles for players across the globe — from competitive online leagues to cinematic penalty shootouts.
-        </p>
-        <div class="hero-actions">
-          <a href="games.html" class="btn primary">Explore Our Games</a>
-          <a href="news.html" class="btn ghost">Latest News</a>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="hero-kicker">Mobile football, made for big moments</p>
+          <h1 class="hero-title">We build <span>football games</span> players come back to every day.</h1>
+          <p class="hero-body">
+            GameGou is a mobile games studio specialising in fast, social football experiences&mdash;from arcade shootouts to full 3D management sims.
+            Our games are easy to pick up, satisfying to master, and built to feel great on every device.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#games" class="btn-primary">Explore our games</a>
+            <a href="news.html" class="btn-ghost">Studio news &amp; updates</a>
+          </div>
+          <div class="hero-meta">
+            <span><span class="hero-meta-badge"></span> Millions of downloads across Perfect Kick, Perfect Kick 2, Top Football Manager, and Soccer Strike.</span>
+            <span>Designed for short matches, long sessions, and real rivalries with friends.</span>
+          </div>
         </div>
-        <div class="hero-meta">
-          <span>Millions of downloads</span>
-          <span>Mobile-first, free-to-play</span>
-          <span>Live events &amp; competitions</span>
-        </div>
-      </div>
-      <div class="hero-card">
-        <p class="hero-card-label">Flagship Title</p>
-        <h2>Top Football Manager</h2>
-        <p>Build your dream squad, manage tactics in real time, and compete in global leagues.</p>
-        <ul class="hero-card-list">
-          <li>Club building &amp; transfers</li>
-          <li>Live tactics and real-time simulation</li>
-          <li>Global PvP leagues and events</li>
-        </ul>
-        <div class="store-row">
-          <span class="store-pill">Google Play</span>
-          <span class="store-pill">App Store</span>
+
+        <div class="hero-media-shell" aria-hidden="true">
+          <div class="hero-slider" id="hero-slider">
+            <div class="hero-slider-track">
+              <figure class="hero-slide is-active">
+                <img src="assets/images/hero-perfect-kick-2.webp" alt="Cartoon-style penalty shootout scene in a packed stadium" loading="eager" />
+              </figure>
+              <figure class="hero-slide">
+                <img src="assets/images/hero-soccer-strike.webp" alt="Third-person view of a player striking the ball towards a goal with targets" loading="lazy" />
+              </figure>
+              <figure class="hero-slide">
+                <img src="assets/images/hero-top-football-manager.webp" alt="Top-down 3D football match from the sideline with manager on the touchline" loading="lazy" />
+              </figure>
+            </div>
+            <div class="hero-slider-overlay">
+              <p class="hero-slider-label">Featured titles</p>
+              <p class="hero-slider-title">From penalty shootouts to touchline tactics.</p>
+              <div class="hero-dots" id="hero-dots">
+                <span class="hero-dot is-active"></span>
+                <span class="hero-dot"></span>
+                <span class="hero-dot"></span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section">
-    <div class="container">
-      <h2>Our Games</h2>
-      <p class="section-intro">
-        From full-club management to intense penalty shootouts, Gamegou’s portfolio spans multiple football fantasies — all tuned for mobile-first, free-to-play experiences.
-      </p>
-      <div class="cards-grid">
-        <article class="card">
-          <h3>Top Football Manager</h3>
-          <p>Take charge of your club, scout and sign top talent, and outthink rival managers in real-time 3D matches.</p>
-          <ul class="bullet-list">
-            <li>Club building &amp; youth development</li>
-            <li>Live tactics and matchday decisions</li>
-            <li>Global leagues and ranked leaderboards</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Soccer Strike</h3>
-          <p>High-intensity, pick-up-and-play free kick action with cinematic stadiums and intuitive swipe shooting.</p>
-          <ul class="bullet-list">
-            <li>Fast, session-friendly matches</li>
-            <li>Skill-based shooting &amp; curling</li>
-            <li>Cosmetic unlocks and stadium upgrades</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>More Football Experiences</h3>
-          <p>We’re continually expanding our line-up with new ways to experience the drama of the beautiful game on mobile.</p>
-          <ul class="bullet-list">
-            <li>Regional leagues &amp; live events</li>
-            <li>Social features and friend competitions</li>
-            <li>Optimized for a wide range of devices</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
+    <section id="games" class="section">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-kicker">Games</p>
+          <h2 class="section-title">Our football line-up.</h2>
+          <p class="section-subtitle">
+            Four different ways to live the match. Pick your favourite angle on the beautiful game, or bounce between all of them.
+          </p>
+        </header>
 
-  <section class="section section-alt">
-    <div class="container split">
-      <div>
-        <h2>Trusted partners. Global reach.</h2>
-        <p class="section-intro">
-          Gamegou works with platform partners, publishers, and football organizations to bring authentic, long-lasting football experiences to fans worldwide.
-        </p>
-        <ul class="bullet-list">
-          <li>Deep expertise in football-first game design</li>
-          <li>Live-ops, event design, and data-driven growth</li>
-          <li>Flexible partnership and publishing models</li>
-        </ul>
-      </div>
-      <div class="info-panel">
-        <h3>Interested in partnering?</h3>
-        <p>We’re open to collaborations across publishing, sponsorships, broadcasting, and football IP.</p>
-        <a href="partners.html" class="btn primary full-width">Learn More</a>
-      </div>
-    </div>
-  </section>
-</main>
+        <div class="games-grid">
+          <article class="game-card">
+            <div class="game-card-media">
+              <img src="assets/images/perfect-kick-2-amazing-awards.webp" alt="Cartoon footballer shooting towards goal in a colourful stadium" loading="lazy" />
+              <span class="game-pill">Perfect Kick</span>
+            </div>
+            <div class="game-card-body">
+              <div class="game-title-row">
+                <h3 class="game-title">Perfect Kick</h3>
+              </div>
+              <p class="game-tagline">The original arcade penalty shootout that started it all, focused on quick, satisfying kicks and saves.</p>
+              <div class="game-meta-row">
+                <span class="game-meta-pill">Arcade shootouts</span>
+                <span class="game-meta-pill">Quick sessions</span>
+                <span class="game-meta-pill">Global PvP</span>
+              </div>
+            </div>
+          </article>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; 2025 Gamegou. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="terms-of-service.html">Terms of Service</a>
-      <a href="licensing.html">Licensing</a>
-    </div>
-  </div>
-</footer>
+          <article class="game-card">
+            <div class="game-card-media">
+              <img src="assets/images/perfect-kick-2-challenge-friends.webp" alt="Two stylised football characters facing off for a penalty in a stadium" loading="lazy" />
+              <span class="game-pill">Perfect Kick 2</span>
+            </div>
+            <div class="game-card-body">
+              <div class="game-title-row">
+                <h3 class="game-title">Perfect Kick 2</h3>
+              </div>
+              <p class="game-tagline">Head-to-head penalty duels where you play as both the shooter and the keeper, with power-ups and live events.</p>
+              <div class="game-meta-row">
+                <span class="game-meta-pill">Real-time PvP</span>
+                <span class="game-meta-pill">Shooter &amp; goalie</span>
+                <span class="game-meta-pill">Events &amp; seasons</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-card-media">
+              <img src="assets/images/hero-top-football-manager.webp" alt="Top-down view of a 3D football match from the manager's perspective" loading="lazy" />
+              <span class="game-pill">Top Football Manager</span>
+            </div>
+            <div class="game-card-body">
+              <div class="game-title-row">
+                <h3 class="game-title">Top Football Manager</h3>
+              </div>
+              <p class="game-tagline">Build your squad, set your tactics, and watch real-time 3D matches as you rise through the leagues.</p>
+              <div class="game-meta-row">
+                <span class="game-meta-pill">3D match engine</span>
+                <span class="game-meta-pill">Squad building</span>
+                <span class="game-meta-pill">PvP leagues</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-card-media">
+              <img src="assets/images/hero-soccer-strike.webp" alt="Striker running up to shoot in a large modern football stadium" loading="lazy" />
+              <span class="game-pill">Soccer Strike</span>
+            </div>
+            <div class="game-card-body">
+              <div class="game-title-row">
+                <h3 class="game-title">Soccer Strike</h3>
+              </div>
+              <p class="game-tagline">Swipe-to-shoot challenges, precision target practice, and stylish goals for quick-hit sessions.</p>
+              <div class="game-meta-row">
+                <span class="game-meta-pill">Swipe shooting</span>
+                <span class="game-meta-pill">Target modes</span>
+                <span class="game-meta-pill">Mobile-first</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container news-layout">
+        <div class="news-grid">
+          <div>
+            <header class="section-header">
+              <p class="section-kicker">News</p>
+              <h2 class="section-title">Latest from the studio.</h2>
+              <p class="section-subtitle">
+                Updates across the full GameGou portfolio&mdash;new events, feature drops, and behind-the-scenes stories from the team.
+              </p>
+            </header>
+            <div id="news-home-list" class="news-cards"></div>
+            <div style="margin-top: 14px;">
+              <a href="news.html" class="btn-ghost">View all news</a>
+            </div>
+          </div>
+          <aside class="news-sidebar">
+            <h3 class="section-title" style="font-size:1.15rem; margin-bottom:6px;">For players &amp; partners</h3>
+            <p class="section-subtitle" style="max-width:none; font-size:0.9rem;">
+              Looking to feature GameGou titles, run a promotion, or explore sponsorships across our games?
+              Reach out to our publishing team for press kits and partnership opportunities.
+            </p>
+            <p style="margin-top:14px; font-size:0.9rem;">
+              <a href="mailto:business@gamegou.com" class="btn-primary" style="display:inline-flex; padding-inline:18px;">Contact publishing</a>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script>
+    (function () {
+      var slider = document.getElementById('hero-slider');
+      if (!slider) return;
+      var slides = slider.querySelectorAll('.hero-slide');
+      var dots = document.getElementById('hero-dots').querySelectorAll('.hero-dot');
+      var current = 0;
+
+      function show(idx) {
+        slides[current].classList.remove('is-active');
+        dots[current].classList.remove('is-active');
+        current = idx;
+        slides[current].classList.add('is-active');
+        dots[current].classList.add('is-active');
+      }
+
+      dots.forEach(function (dot, index) {
+        dot.addEventListener('click', function () {
+          show(index);
+        });
+      });
+
+      setInterval(function () {
+        show((current + 1) % slides.length);
+      }, 4500);
+    })();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.renderGameGouNews) {
+        window.renderGameGouNews('#news-home-list', 3);
+      }
+    });
+  </script>
 </body>
 </html>
